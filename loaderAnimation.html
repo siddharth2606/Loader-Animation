@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loaderAnimation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: darkcyan;
+        }
+        .circle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 10px solid rgba(255, 255,255, .1);
+            border-top: 10px solid white;
+            animation: animate 1.5s infinite linear;
+        }
+        @keyframes animate
+        {
+            0%
+            {
+                transform: translate(-50%,-50%) rotate(0deg);
+            }
+            100%
+            {
+                transform: translate(-50%,-50%) rotate(360deg);
+            }
+        }
+        .header{
+            align-content: end;
+            height: 200px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            
+        
+        }
+        .text{
+            height: 50px;
+            width: 400px;
+            font-size: 3rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="text"><b><u>loader Animation</u></b></div>
+    </div>
+    <div class="circle"></div>
+</body>
+</html>
